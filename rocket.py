@@ -47,6 +47,10 @@ class ChannelUser(NamedTuple):
     username: str
     name: str =  'noname'
 
+    @property
+    def online(self) -> bool:
+        self.status == 'online'
+
 
 class ChannelUsers(NamedTuple):
     total: int
