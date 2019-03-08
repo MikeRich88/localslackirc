@@ -43,9 +43,9 @@ class ChannelType(Enum):
 
 class ChannelUser(NamedTuple):
     id_: str
-    status: str
     username: str
-    name: str =  'noname'
+    status: str = 'offline'
+    name: str = 'noname'
 
     @property
     def online(self) -> bool:
